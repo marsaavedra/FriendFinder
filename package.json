@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/marsaavedra/FriendFinder/issues"
   },
-  "homepage": "https://github.com/marsaavedra/FriendFinder#readme"
+  "homepage": "https://github.com/marsaavedra/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
 }
