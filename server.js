@@ -14,3 +14,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+// bring in api routes - bring in api routes first because
+// that's where we're getting our data to display in html pages
+require("./app/routing/apiRoutes.js")(app);
+
+// bring in the html routes
+require("./app/routing/htmlRoutes.js")(app);
+
+// set up the listener
+app.listen(PORT, function() {
+	console.log("app listening on port", PORT);
+});
+
