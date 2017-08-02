@@ -15,6 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+app.use(express.static(__dirname + '/public'));
+
 // bring in api routes - bring in api routes first because
 // that's where we're getting our data to display in html pages
 require("./app/routing/apiRoutes.js")(app);
