@@ -1,3 +1,6 @@
+
+app.use(express.static(__dirname + '/app/public'));
+
 var config = {
     '.chosen-select': {},
     '.chosen-select-deselect': {
