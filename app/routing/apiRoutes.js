@@ -31,7 +31,7 @@ module.exports = function(app) {
 			
 			var tempDifference = difference(surveyResults, friends[i].scores);
 
-			// console log the difference between user choices and pet being compared
+			// console log the difference between user choices and sith being compared
 			console.log("difference between", surveyResults, "and", friends[i].name, friends[i].scores, "=", tempDifference);
 
 
